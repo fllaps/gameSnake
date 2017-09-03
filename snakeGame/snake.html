@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/snake.css"/>
+</head>
+<body>
+<div class="background">
+    <p>
+        SCORE :<span id="score">0</span>
+        <button onclick="game.reStart()">重新开始</button>
+        <button onclick="game.helpShow()">帮助</button>
+        <button onclick="game.close()">退出</button>
+    </p>
+    <div id="snakeGarden">
+        <div id="s00"></div>
+        <div id="s01"></div>
+        <div id="s02"></div>
+        <div id="s03"></div>
+        <div id="s04"></div>
+        <div id="s05"></div>
+        <div id="s06"></div>
+        <div id="s07"></div>
+        <div id="s08"></div>
+        <div id="s09"></div>
+        <div id="s010"></div>
+        <div id="s011"></div>
+        <div id="s012"></div>
+        <div id="s013"></div>
+        <div id="s014"></div>
+        <div id="s015"></div>
+        <div id="s016"></div>
+        <div id="s017"></div>
+        <div id="s10"></div>
+        <div id="s11"></div>
+        <div id="s12"></div>
+        <div id="s13"></div>
+        <div id="s14"></div>
+        <div id="s15"></div>
+        <div id="s16"></div>
+        <div id="s17"></div>
+        <div id="s18"></div>
+        <div id="s19"></div>
+        <div id="s110"></div>
+        <div id="s111"></div>
+        <div id="s112"></div>
+        <div id="s113"></div>
+        <div id="s114"></div>
+        <div id="s115"></div>
+        <div id="s116"></div>
+        <div id="s117"></div>
+        <div id="s20"></div>
+        <div id="s21"></div>
+        <div id="s22"></div>
+        <div id="s23"></div>
+        <div id="s24"></div>
+        <div id="s25"></div>
+        <div id="s26"></div>
+        <div id="s27"></div>
+        <div id="s28"></div>
+        <div id="s29"></div>
+        <div id="s210"></div>
+        <div id="s211"></div>
+        <div id="s212"></div>
+        <div id="s213"></div>
+        <div id="s214"></div>
+        <div id="s215"></div>
+        <div id="s216"></div>
+        <div id="s217"></div>
+        <div id="s30"></div>
+        <div id="s31"></div>
+        <div id="s32"></div>
+        <div id="s33"></div>
+        <div id="s34"></div>
+        <div id="s35"></div>
+        <div id="s36"></div>
+        <div id="s37"></div>
+        <div id="s38"></div>
+        <div id="s39"></div>
+        <div id="s310"></div>
+        <div id="s311"></div>
+        <div id="s312"></div>
+        <div id="s313"></div>
+        <div id="s314"></div>
+        <div id="s315"></div>
+        <div id="s316"></div>
+        <div id="s317"></div>
+        <div id="s40"></div>
+        <div id="s41"></div>
+        <div id="s42"></div>
+        <div id="s43"></div>
+        <div id="s44"></div>
+        <div id="s45"></div>
+        <div id="s46"></div>
+        <div id="s47"></div>
+        <div id="s48"></div>
+        <div id="s49"></div>
+        <div id="s410"></div>
+        <div id="s411"></div>
+        <div id="s412"></div>
+        <div id="s413"></div>
+        <div id="s414"></div>
+        <div id="s415"></div>
+        <div id="s416"></div>
+        <div id="s417"></div>
+        <div id="s50"></div>
+        <div id="s51"></div>
+        <div id="s52"></div>
+        <div id="s53"></div>
+        <div id="s54"></div>
+        <div id="s55"></div>
+        <div id="s56"></div>
+        <div id="s57"></div>
+        <div id="s58"></div>
+        <div id="s59"></div>
+        <div id="s510"></div>
+        <div id="s511"></div>
+        <div id="s512"></div>
+        <div id="s513"></div>
+        <div id="s514"></div>
+        <div id="s515"></div>
+        <div id="s516"></div>
+        <div id="s517"></div>
+        <div id="s60"></div>
+        <div id="s61"></div>
+        <div id="s62"></div>
+        <div id="s63"></div>
+        <div id="s64"></div>
+        <div id="s65"></div>
+        <div id="s66"></div>
+        <div id="s67"></div>
+        <div id="s68"></div>
+        <div id="s69"></div>
+        <div id="s610"></div>
+        <div id="s611"></div>
+        <div id="s612"></div>
+        <div id="s613"></div>
+        <div id="s614"></div>
+        <div id="s615"></div>
+        <div id="s616"></div>
+        <div id="s617"></div>
+        <div id="s70"></div>
+        <div id="s71"></div>
+        <div id="s72"></div>
+        <div id="s73"></div>
+        <div id="s74"></div>
+        <div id="s75"></div>
+        <div id="s76"></div>
+        <div id="s77"></div>
+        <div id="s78"></div>
+        <div id="s79"></div>
+        <div id="s710"></div>
+        <div id="s711"></div>
+        <div id="s712"></div>
+        <div id="s713"></div>
+        <div id="s714"></div>
+        <div id="s715"></div>
+        <div id="s716"></div>
+        <div id="s717"></div>
+        <div id="s80"></div>
+        <div id="s81"></div>
+        <div id="s82"></div>
+        <div id="s83"></div>
+        <div id="s84"></div>
+        <div id="s85"></div>
+        <div id="s86"></div>
+        <div id="s87"></div>
+        <div id="s88"></div>
+        <div id="s89"></div>
+        <div id="s810"></div>
+        <div id="s811"></div>
+        <div id="s812"></div>
+        <div id="s813"></div>
+        <div id="s814"></div>
+        <div id="s815"></div>
+        <div id="s816"></div>
+        <div id="s817"></div>
+    </div>
+</div>
+<div class="gameOver">
+    <p></p>
+    <div>
+        <h2>GAME OVER</h2>
+        <h1></h1>
+        <p><a  onclick="game.reStart()">再来一局</a>
+            <a href="javascript:window.opener=null;window.close()">退出</a></p>
+    </div>
+</div>
+<div class="gameHelp">
+    <p></p>
+    <div>
+        <h2>游戏快捷键指南</h2>
+        <h1></h1>
+        <p><b>开始</b><span>按<a>任意方向键</a>开始&nbsp;</span></p>
+        <p><b>暂停</b><span>按<a>空格键</a>暂停和继续</span></p>
+        <p><b>加速</b><span>按<a>Ｑ键</a>加速&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+        <p><b>退出</b><span>按<a>ＥＳＣ</a>退出&nbsp;&nbsp;&nbsp;</span></p>
+        <a href="javaScript:game.helpHide()">我知道了</a>
+    </div>
+</div>
+<script src="js/snake.js"></script>
+</body>
+</html>

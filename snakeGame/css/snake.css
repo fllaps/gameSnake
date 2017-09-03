@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+.background p{
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: bold;
+    color:#fff;
+    position:relative;
+    top:-15px;
+}
+.background p button{
+    opacity: 0.8;
+    border-radius: 2px;
+    position:relative;
+    top:-8px;
+    left:450px;
+    margin-right:20px;
+}
+.background span{
+    color:#e4393c;
+    padding:0 10px;
+}
+.background{
+    background-color:#030;
+    width: 1000px; height: 600px;
+    margin: 20px auto 0 auto;
+    padding:50px;
+}
+#snakeGarden{
+    background-color:#ddd;
+    width: 900px; height: 450px;
+}
+#snakeGarden>div{
+    width:50px; height:50px;
+    background: #dddddd;
+    /*border:1px solid #000;*/
+    float:left;
+    border-radius: 50%;
+}
+/*GAMEOVER的情况*/
+div.gameOver{
+    display: none;
+}
+div.gameOver>p{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:black;
+    opacity:0.6;
+}
+div.gameOver>div{
+    width:400px;
+    height:200px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:-100px;
+    margin-left:-200px;
+    z-index:20000;
+    border-radius:5px;
+    padding:10px;
+    color:#333333;
+    font-size: 15px;
+    background-color: #dddddd;
+    text-align:center;
+}
+div.gameOver>div h2{
+    font-size: 48px;
+    border-bottom:2px solid #000;
+    margin-top:0px;
+}
+div.gameOver>div a{
+    color: #e4393c;
+    font-size: 30px;
+    padding:0 40px;
+    text-decoration: none;
+}
+div.gameOver>div a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/*游戏指南*/
+div.gameHelp{
+    display: none;
+}
+div.gameHelp>p{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:black;
+    opacity:0.6;
+}
+div.gameHelp>div{
+    font-family: simsun;
+    width:400px;
+    height:300px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top:-150px;
+    margin-left:-200px;
+    z-index:2000;
+    border-radius:5px;
+    padding:10px;
+    background-color: #dddddd;
+    text-align:center;
+}
+div.gameHelp>div h2{
+    font-size: 30px;
+    border-bottom:2px solid #000;
+    margin-top:0px;
+    padding:7px 0;
+}
+div.gameHelp>div p{
+    font-size: 20px;
+}
+div.gameHelp>div p span{
+    padding:0 20px;
+}
+div.gameHelp>div p b{
+    padding:0 20px;
+}
+div.gameHelp>div p a{
+    color: #e439e4;
+}
+div.gameHelp>div>a{
+    padding:8px 30px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #e4393c;
+    transition:all 0.3s linear;
+}
+div.gameHelp>div>a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
